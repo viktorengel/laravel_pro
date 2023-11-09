@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::view("/","welcome")->name("welcome");
+
+Route::view('/','landing.index')->name('Incio');
+Route::view('/about','landing.about')->name('about');
+
