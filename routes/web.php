@@ -17,8 +17,12 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-// Route::view("/","welcome")->name("welcome");
+// Route::view('/','welcome')->name('welcome');
 
 Route::view('/','landing.index')->name('Incio');
 Route::view('/about','landing.about')->name('about');
 
+Route::view('/','index')->name('inicio');
+Route::view('/about','about')->name('about');
+Route::view('/services','services')->name('services');
+Route::view('/contact','contact')->name('contact');
